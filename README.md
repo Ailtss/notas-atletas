@@ -1,36 +1,42 @@
 # 🏆 Sistema de Cálculo de Média de Atletas  
 ### Projeto de Certificação – DEVstart | SENAI
 
-Este projeto foi desenvolvido como parte do curso **DEVstart** do SENAI, com o objetivo de praticar lógica de programação, manipulação de arrays e aplicação de regras de negócio utilizando **JavaScript**.
+📚 Projeto desenvolvido para fins educacionais, com foco na prática de lógica de programação e manipulação de dados utilizando **JavaScript**.
 
 ---
 
-## 📌 Descrição do Problema
+## 📌 Descrição do Projeto
 
-Criar uma função capaz de:
+Este sistema recebe uma lista de atletas contendo cinco notas para cada um e calcula a **média válida**, desconsiderando automaticamente a maior e a menor nota.
 
-- Receber uma lista (matriz) de objetos contendo:
-  - Nome do atleta
-  - Cinco notas atribuídas
-- Calcular a média das notas **desconsiderando a maior e a menor nota**
-- Exibir:
-  - Nome do atleta
-  - Notas recebidas
-  - Média final calculada
+Ao final, o programa exibe:
+
+- Nome do atleta  
+- Notas recebidas  
+- Média final calculada  
+
+Esse modelo simula critérios reais de avaliação esportiva, onde valores extremos são descartados para evitar distorções no resultado.
 
 ---
 
 ## 🧠 Lógica Aplicada
 
-Para calcular a média corretamente:
+O algoritmo percorre a lista de atletas e, para cada um:
 
-1. Recebemos as 5 notas do atleta.
-2. Identificamos a **maior** e a **menor** nota.
-3. Removemos essas duas notas.
-4. Calculamos a média apenas das **3 notas restantes**.
-5. Exibimos os resultados formatados no console.
+- Cria uma cópia das notas para manipulação
+- Utiliza funções nativas do JavaScript para:
+  - Identificar o maior valor (`Math.max`)
+  - Identificar o menor valor (`Math.min`)
+- Remove os valores extremos
+- Calcula a média das três notas restantes
+- Exibe o resultado formatado no console
 
-Essa abordagem simula sistemas reais de avaliação esportiva, onde valores extremos são descartados para evitar distorções na média final.
+Essa abordagem demonstra aplicação de:
+- Arrays
+- Objetos
+- Funções
+- Métodos nativos da linguagem
+- Regras de negócio
 
 ---
 
@@ -49,8 +55,9 @@ const atletas = [
 ];
 ```
 
+---
 
-## 📊 Exemplo de Saída Esperada
+## 📊 Exemplo de Saída
 
 ```
 Atleta: Carlos
@@ -62,33 +69,75 @@ Notas: 10, 9, 8, 9, 10
 Média válida: 9.33
 ```
 
+---
+
+## 📁 Estrutura do Projeto
+
+```
+📦 sistema-media-atletas
+ ┣ 📜 index.js
+ ┗ 📜 README.md
+```
+
+---
+
 ## 🚀 Como Executar o Projeto
-Clone o repositório:
+
+### 1️⃣ Clone o repositório
+```bash
 git clone https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git
+```
 
-Acesse a pasta do projeto:
+### 2️⃣ Acesse a pasta do projeto
+```bash
 cd NOME-DO-REPOSITORIO
+```
 
-Execute o arquivo JavaScript com Node.js:
-node nome-do-arquivo.js
+### 3️⃣ Execute o arquivo com Node.js
+```bash
+node index.js
+```
 
-É necessário ter o Node.js instalado na máquina.
+> ⚠️ É necessário ter o **Node.js** instalado na máquina.
 
+---
 
 ## 🎯 Objetivos de Aprendizado
-- Praticar manipulação de arrays e objetos em JavaScript
-- Aplicar regras de negócio em algoritmos
-- Trabalhar com funções e estruturação de código
-- Utilizar Git e GitHub como ferramenta de versionamento
-- Desenvolver um projeto com foco em organização e clareza
+
+- Praticar manipulação de arrays e objetos em JavaScript  
+- Aplicar regras de negócio em algoritmos  
+- Trabalhar com funções e estruturação de código  
+- Desenvolver organização e documentação de projetos  
+- Utilizar Git e GitHub como ferramenta de versionamento  
+
+---
+
+## 🚀 Possíveis Melhorias Futuras
+
+- Permitir entrada de dados dinâmica pelo usuário  
+- Criar uma versão com interface web  
+- Adicionar validação para notas inválidas  
+- Implementar testes automatizados  
+
+---
 
 ## 🛠 Tecnologias Utilizadas
-- JavaScript
-- Node.js
-- Git
-- GitHub
+
+- JavaScript  
+- Node.js  
+- Git  
+- GitHub  
+
+---
 
 ## 👨‍💻 Autor
-Projeto desenvolvido por Ailton da Silva
-Curso DEVstart – SENAI
 
+Projeto desenvolvido por **Ailton da Silva**  
+Curso **DEVstart – SENAI**
+
+---
+
+## 📌 Considerações Finais
+
+Este projeto reforça a importância da organização de dados e da aplicação correta da lógica para resolver problemas reais.  
+Além disso, demonstra a capacidade de estruturar um projeto completo e bem documentado, habilidade essencial no mercado de desenvolvimento de software.
